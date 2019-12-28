@@ -1,0 +1,10 @@
+
+SENTENCIA PARA TRAER EL MENU CORRESPONDIENTE A CADA SESION
+select descripcion,url from perfilxpagina,pagina where perfilxpagina.id_pagina=pagina.id_pagina and id_perfil = 2
+
+******************************SENTENCIA PARA INGRESAR UN NUEVO CLIENTE**********************************************
+INSERT INTO public.usuarios(
+	cod_cliente, nombrecliente, correo, contrasenia, id_perfil)
+	VALUES ('1726418088', 'Juan Flores', 'jflores@cartimex.ec','12546','2');
+
+

@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <title>{{ titulo }}</title>
+  </head>
+
+  <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="static/estilo.css" rel="stylesheet" type="text/css"/>
+  <link href="static/bootstrap/css/simple-sidebar.css" rel="stylesheet">
+  <link href="static/bootstrap/css/simple-sidebar.css" rel="stylesheet">
+  <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<body  style="background-color:#B2BABB;">
+
+
+
+  {% block body %}
+
+  {% endblock %}
+  <script src="static/bootstrap/js/jquery.min.js"></script>
+  <script src="static/bootstrap/js/bootstrap.min.js"></script>
+  <script src="static/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Bootstrap core JavaScript -->
+  <script src="static/bootstrap/js/jquery.min.js"></script>
+  <script src="static/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+
+<nav class="navbar navbar-light bg-light">
+  <span class="navbar-text">
+    &copy; Jonathan Pastas - Bitman Pozo - Danny Tatayo
+  </span>
+</nav>
+
+
+
+
+</html>

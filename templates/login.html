@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="/">
+    <img src="/static/images/analisis.png" width="40" class="d-inline-block align-top" alt="">
+    Sistema de Planificación de Pedidos
+  </a>
+    <form class="form-inline">
+    <a href="/login" class="btn btn-outline-primary"><img src="/static/images/login.png" width="35" class="d-inline-block align-top" alt=""> INICIAR SESION</a>
+
+  </form>
+</nav>
+
+<br>
+<br>
+
+
+
+
+<div class="container" >
+
+
+<center>
+
+
+
+
+<div class="card bg-light mb-3" style="max-width: 50rem;">
+  <h5 class="card-header">INGRESO AL SISTEMA </h5>
+  <center><img src="/static/images/analisis.png" width="85"></center>
+  <div class="card-body">
+
+
+
+      <form method="POST" action="ingresar">
+  <div class="form-group">
+    <label for="correo">CORREO ELECTRONICO</label>
+    <input type="text" class="form-control" id="correo" name="correo" aria-describedby="emailHelp" placeholder="example@example.com">
+    <small id="emailHelp" class="form-text text-muted">Ingreso de Correo Electronico</small>
+  </div>
+  <div class="form-group">
+    <label for="clave">CONTRASEÑA </label>
+    <input type="password" class="form-control" id="clave" name="clave" placeholder="*******">
+  </div>
+
+  <button type="submit" class="btn btn-primary">ENTRAR</button>
+</form>
+
+
+
+  </div>
+</div>
+
+    </center>
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+{% endblock %}
